@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/8d89110db4.js" crossorigin="anonymous"></script>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/rain1.png" type="image/x-icon">
+</head>
+
+<style>
+.container {
+  height: 560px;
+  width: 500px;
+}
+body {
+  margin: 0px;
+}
+.border {
+  border:none;
+}
+#text {
+  font-size: 80px;
+   font-weight: bolder;
+}
+</style>
+
+
+<body class="bg-dark">
+
+  <div class="container mt-5 text-info rounded-3">
+    <div class="d-flex align-items-center justify-content-center">
+      <input type="text" class="rounded-pill text-center p-2 w-75 mt-3 border" placeholder="Seach the City">
+      <span class="fa-solid fa-magnifying-glass fa-xl mt-3" style="color:white; margin-left: 10px;"></span>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <img src="images/rain.png" height="180px">
+  </div>
+
+
+  <div class="d-flex justify-content-center align-items-center">
+    <span class="text-light" id="text">22</span>
+    <span class="fa-regular fa-circle fa-2xs" style="color: #ffffff; font-size: 15px; font-weight: 40px;margin-left: 8px;"></span>
+    <span class="text-light" style="font-size: 60px; font-weight: bold; margin-left: 8px;">C</span>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <span class="text-light" style="font-size: 40px; font-weight: 300px;">New York</span>
+  </div>
+
+
+  <div class="row mt-5 d-flex flex-wrap">
+    <div class="col">
+      <img class="float-start" src="images/humidity.png" style="height: 50px; width: 50px; margin-left: 65px;">
+      <span class="text-light" style="font-size: 20px;margin-left: 10px;">50%</span>
+      <span class="text-light" style="font-size: 20px;margin-left: 10px">Humidity</span>
+    </div>
+    <div class="col ">
+      <img class="float-start" src="images/wind.png" style="height: 50px; width: 50px;">
+      <span class="text-light" style="font-size: 20px; margin-left: 15px;">20 km/h</span>
+      <span class="text-light d-block" style="font-size: 20px;margin-left: 67px;">Wind</span>
+    </div>
+  </div>
+
+
+  </div>
+</body>
+</html>
