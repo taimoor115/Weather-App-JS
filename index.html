@@ -17,12 +17,21 @@
 
 <style>
 .container {
-  height: 560px;
   width: 500px;
 }
+
+@media (min-width: 200px) and (max-width: 650px){
+  .container {
+    width: 350px;
+  }
+}
+
 body {
   margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
+
 .border {
   border:none;
   outline: none;
@@ -35,6 +44,8 @@ body {
 .weather {
   display: none;
 }
+
+media[min-width]
 </style>
 
 
@@ -45,11 +56,11 @@ body {
     </h1>
   </div>
 
-  <div class="container text-info rounded-3">
+  <div class="container text-info rounded-3 ">
     <div class="d-flex align-items-center justify-content-center">
 
         <input type="text" class="rounded-pill text-center p-2 w-75 mt-3 border input" placeholder="Search the City">
-        <button type="submit" class=" btn  fa-solid fa-magnifying-glass fa-xl mt-3 search" style="color:white; margin-left: 10px; "></button>
+        <button type="submit" class=" btn  fa-solid fa-magnifying-glass fa-xl mt-3 search" style="color:white; ; "></button>
 
   </div>
 <div class="weather">
@@ -61,7 +72,7 @@ body {
 
     <div class="d-flex justify-content-center align-items-center">
       <span class="text-light temperature" id="text">22</span>
-      <span class="fa-regular fa-circle fa-2xs" style="color: #ffffff; font-size: 15px; font-weight: 40px;margin-left: 8px;"></span>
+      <span class="fa-regular fa-circle fa-2xs" style="color: white; font-size: 15px; font-weight: 40px;margin-left: 8px;"></span>
       <span class="text-light" style="font-size: 60px; font-weight: bold; margin-left: 8px;">C</span>
     </div>
 
@@ -72,14 +83,18 @@ body {
 
     <div class="row mt-5 d-flex flex-wrap">
       <div class="col">
-        <img class="float-start" src="images/humidity.png" style="height: 50px; width: 50px; margin-left: 65px;">
-        <span class="text-light humidity" style="font-size: 20px;margin-left: 10px;">50%</span>
-        <span class="text-light" style="font-size: 20px;margin-left: 10px">Humidity</span>
+        <img class="float-start ms-3" src="images/humidity.png" style="height: 50px; width: 50px;">
+        <div class="d-flex flex-column">
+          <span class="text-light humidity" style="font-size: 20px;margin-left: 10px;">50%</span>
+          <span class="text-light" style="font-size: 20px;margin-left: 10px">Humidity</span>
+        </div>
       </div>
-      <div class="col ">
-        <img class="float-start" src="images/wind.png" style="height: 50px; width: 50px;">
-        <span class="text-light wind" style="font-size: 20px; margin-left: 15px;">20 km/h</span>
-        <span class="text-light d-block" style="font-size: 20px;margin-left: 67px;">Wind</span>
+      <div class="col">
+        <img class="float-start" src="images/wind.png" style="height: 60px; width: 50px;">
+        <div class="d-flex flex-column">
+          <span class="text-light ms-2 wind" style="font-size: 20px;">20 km/h</span>
+          <span class="text-light ms-2" style="font-size: 20px;">Wind</span>
+        </div>
       </div>
     </div>
 </div>
