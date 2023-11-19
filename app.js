@@ -4,7 +4,7 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather?units=metric&q='
 async function checkWeather(city) {
 
 
-  if (city === '') {
+  if (city === ' ') {
     alert("Enter city name")
     return;
   }
